@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "weathercardbuild": "ng build --prod --output-hashing=none && node ./mergelib.js",
-    "weatherprod": "npm run weathercardbuild && cd dist/weathercard && http-server -c-1"
+    "salonbuild": "ng build --prod --output-hashing=none && node ./mergelib.js",
+    "salonprod": "npm run weathercardbuild && cd dist/weathercard && http-server -c-1"
   },
   "private": true,
   "dependencies": {
