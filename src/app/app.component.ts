@@ -10,9 +10,10 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 export class AppComponent implements OnInit {
   calendarPlugins = [dayGridPlugin]; // important!
 
-  constructor(
-    private swUpdate: SwUpdate
-  ) { }
+  param = {value: 'world'};
+
+  constructor(private swUpdate: SwUpdate) {
+  }
 
   ngOnInit() {
     this.reloadCache();
